@@ -1,4 +1,4 @@
-package org.jcasbin.plugins.jcasbin-vertx-plugin;
+package org.jcasbin.plugins;
 
 import io.vertx.core.AbstractVerticle;
 

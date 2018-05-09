@@ -6,7 +6,7 @@
 
     <groupId>org.jcasbin.plugins</groupId>
     <artifactId>jcasbin-vertx-plugin</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>0.0.1</version>
 
     <properties>
         <java.version>1.8</java.version>
@@ -40,7 +40,7 @@
                               <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                   <manifestEntries>
                                       <Main-Class>io.vertx.core.Launcher</Main-Class>
-                                      <Main-Verticle>org.jcasbin.plugins.jcasbin-vertx-plugin.MainVerticle</Main-Verticle>
+                                      <Main-Verticle>org.jcasbin.plugins.MainVerticle</Main-Verticle>
                                   </manifestEntries>
                               </transformer>
                               <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
@@ -63,7 +63,7 @@
                     <mainClass>io.vertx.core.Launcher</mainClass>
                     <arguments>
                         <argument>run</argument>
-                        <argument>org.jcasbin.plugins.jcasbin-vertx-plugin.MainVerticle</argument>
+                        <argument>org.jcasbin.plugins.MainVerticle</argument>
                     </arguments>
                 </configuration>
             </plugin>
@@ -72,19 +72,19 @@
     </build>
 
     <dependencies>
-        
+
             <dependency>
                 <groupId>io.vertx</groupId>
                 <artifactId>vertx-core</artifactId>
                 <version>${vertx.version}</version>
             </dependency>
-        
+
             <dependency>
                 <groupId>io.vertx</groupId>
                 <artifactId>vertx-unit</artifactId>
                 <version>${vertx.version}</version>
             </dependency>
-        
+
     </dependencies>
 
 </project>
